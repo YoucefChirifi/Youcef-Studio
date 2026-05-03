@@ -12,7 +12,7 @@
     /* ─── CSS Variables ─── */
     :root {
       --bg: #F4F3F0;
-      --bg2: #EEECEA;
+      --bg2: #EEECEA; 
       --dark: #1A1A1A;
       --mid: #5A5A5A;
       --light: #9A9A9A;
@@ -20,6 +20,10 @@
       --gold2: #A8884E;
       --white: #FAFAFA;
     }
+@media (max-width: 700px) {
+  .extras-grid { grid-template-columns: 1fr !important; }
+}
+
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -877,36 +881,54 @@
       </p>
 
       <!-- INDIVIDUEL -->
-      <div class="pack-category-label reveal">Individuel</div>
-      <div class="packs-row">
+     <!-- INDIVIDUEL -->
+<div class="pack-category-label reveal">Individuel — Shooting Oran</div>
+<div class="packs-row">
 
-        <div class="pack-card reveal reveal-delay-1">
-          <div class="pack-name">Standard</div>
-          <div class="pack-price">7 000 <span>DA</span></div>
-          <div class="pack-divider"></div>
-          <ul class="pack-features">
-            <li>+50 photos livrées</li>
-            <li>Retouches professionnelles incluses</li>
-            <li>Livraison en 3 jours</li>
-          </ul>
-        </div>
+  <div class="pack-card reveal reveal-delay-1">
+    <div class="pack-name">Solo</div>
+    <div class="pack-price">5 000 <span>DA</span></div>
+    <div class="pack-divider"></div>
+    <ul class="pack-features">
+      <li>30+ photos retouchées</li>
+      <li>Session shooting complète</li>
+    </ul>
+  </div>
 
-        <div class="pack-card featured reveal reveal-delay-2">
-          <div class="pack-badge">Premium</div>
-          <div class="pack-name">Premium</div>
-          <div class="pack-price">12 000 <span>DA</span></div>
-          <div class="pack-divider"></div>
-          <ul class="pack-features">
-            <li>+50 photos livrées</li>
-            <li>Retouches professionnelles incluses</li>
-            <li>Livraison en 3 jours</li>
-            <li>Vidéo 4K avec montage</li>
-            <li>Gimbal RS4 professionnel</li>
-          </ul>
-        </div>
+  <div class="pack-card featured reveal reveal-delay-2">
+    <div class="pack-badge">Duo</div>
+    <div class="pack-name">Duo</div>
+    <div class="pack-price">3 500 <span>DA / pers.</span></div>
+    <div class="pack-divider"></div>
+    <ul class="pack-features">
+      <li>30+ photos retouchées chacun</li>
+      <li>Photos solo + duo incluses</li>
+    </ul>
+  </div>
 
-      </div>
+</div>
 
+<!-- EXTRAS -->
+
+<!-- EXTRAS -->
+<div class="pack-category-label reveal" style="margin-top: -16px;">Extras</div>
+<div class="reveal" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 48px;">
+
+  <div style="border: 1px solid rgba(200,169,110,0.3); padding: 28px 24px; background: rgba(200,169,110,0.05); position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--gold);"></div>
+    <div style="font-size: 0.6rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Déplacement</div>
+    <div style="font-size: 2rem; font-weight: 800; color: #fff; line-height: 1; margin-bottom: 4px;">+3 000 <span style="font-size: 0.9rem; font-weight: 400; color: rgba(255,255,255,0.4);">DA</span></div>
+    <div style="font-size: 0.75rem; color: rgba(255,255,255,0.45); letter-spacing: 0.05em; margin-top: 8px;">Hors wilaya d'Oran</div>
+  </div>
+
+  <div style="border: 1px solid rgba(200,169,110,0.3); padding: 28px 24px; background: rgba(200,169,110,0.05); position: relative; overflow: hidden;">
+    <div style="position: absolute; top: 0; left: 0; width: 3px; height: 100%; background: var(--gold);"></div>
+    <div style="font-size: 0.6rem; font-weight: 700; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px;">Impression</div>
+    <div style="font-size: 2rem; font-weight: 800; color: #fff; line-height: 1; margin-bottom: 4px;">1 000 <span style="font-size: 0.9rem; font-weight: 400; color: rgba(255,255,255,0.4);">DA</span></div>
+    <div style="font-size: 0.75rem; color: rgba(255,255,255,0.45); letter-spacing: 0.05em; margin-top: 8px;">Pour 10 photos tirées</div>
+  </div>
+
+</div>
       <!-- BOUTIQUE -->
       <div class="pack-category-label reveal">Boutique</div>
       <div class="packs-row">
@@ -990,7 +1012,7 @@
   <footer>
     <div class="footer-brand">Youcef Studio</div>
     <div class="footer-tagline">"L'image parle là où les mots se taisent."</div>
-    <div class="footer-copy">© 2025 Youcef Chirifi — Tous droits réservés</div>
+    <div class="footer-copy">© 2026 Youcef Chirifi — Tous droits réservés</div>
   </footer>
 
   <!-- ─── JAVASCRIPT ─── -->
